@@ -21,14 +21,14 @@
                 <div class="toast-body">
                     Thank You! Added to "Wishlist Reminders".
                 </div>
-            <button type="button" class = "btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            <button type="button" class = "btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
             </div>
         </div>
     </div>
 
     <!--Header and NavBar-->
 
-    <header class="border-bottom border-light border-opacity-10 stick-top bg-dark">
+    <header class="border-bottom border-light border-opacity-10 sticky-top bg-dark">
         <nav class="navbar navbar-expand-lg navbar-dark container py-3">
              <a class="navbar-brand fw-bold" href="#">
                 <span class = "brand-accent"> GeccoBot</span> // <span class = "text-secondary">  🙞Runic Winds🙜</span>
@@ -39,10 +39,11 @@
             </button>
 
             <div class="collapse navbar-collapse" id="siteNav">
-                <ul class = "navbar-nav ms auto gap-lg-2 mt-3 mt-lg-0">
+                <ul class = "navbar-nav ms-auto gap-lg-2 mt-3 mt-lg-0">
                     <li class ="nav-item"><a class = "nav-link" href="#trailer">Trailer</a></li>
-                    <li class ="nav-item"><a class = "nav-link" href="#screenshots">Screenshots</a></li>
+                    <li class ="nav-item"><a class = "nav-link" href="#screens">Screenshots</a></li>
                     <li class ="nav-item"><a class = "nav-link" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
 
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="linksDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -65,4 +66,280 @@
             </div>
         </nav>
     </header>
+
+    <main>
+
+        <section class="container py-5">
+            <div class="row align-items-center g-4">
+                <div class="col-12 col-lg-6">
+                    <p class="text-uppercase text-secondary small mb-2">Indie Action-Adventure · Pixel Art · Godot</p>
+                    <h1 class="display-5 fw-bold mb-3">The Past Still Echoes</h1>
+                    <p class="lead text-secondary mb-4">
+                        Runic Winds is a top-down, pixel-art action RPG where gesture-based magic turns spells into tools, 
+                        and mastery drives combat, puzzles, and exploration.
+                    </p>
+                              <div class="d-flex flex-wrap gap-2">
+            <a class="btn btn-primary" href="#trailer">Watch Trailer</a>
+            <button class="btn btn-outline-light" type="button" data-bs-toggle="modal" data-bs-target="#newsletterModal">
+              Join Newsletter
+            </button>
+            <button id="toastBtn" class="btn btn-outline-success" type="button">
+              Quick Wishlist Toast
+            </button>
+          </div>
+
+          <div class="d-flex flex-wrap gap-2 mt-4">
+            <span class="badge rounded-pill text-bg-secondary">Controller Friendly</span>
+            <span class="badge rounded-pill text-bg-secondary">Original Soundtrack</span>
+            <span class="badge rounded-pill text-bg-secondary">Steam Demo</span>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-6">
+          <div class="card bg-black border-light border-opacity-10 shadow-soft">
+            <div class="card-body">
+              <div class="ratio ratio-16x9" id="trailer">
+                <iframe
+                  src="https://www.youtube.com/embed/e1aPauMXVZ4"
+                  title="Game Trailer"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen>
+                </iframe>
+              </div>
+              <p class="text-secondary small mt-3 mb-0">
+                Runic Winds announcement trailer
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Carousel -->
+
+    <section class="container pb-5" id="screens">
+        <div class="d-flex justify-content-between align-items-end mb-3">
+            <h2 class="h3 mb-0">Screenshots</h2>
+        </div>
+
+        <div id="screensCarousel" class="carousel slide border border-light border-opacity-10 rounded-4 overflow-hidden shadow-soft" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+            <button type="button" data-bs-target="#screensCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#screensCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#screensCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img_1.png" class="d-block w-100" alt="Screenshot 1">
+                <div class="carousel-caption d-none d-md-block">
+                <h5>Magic</h5>
+                <p class="text-light text-opacity-75">Learn spells as tools to explore in new ways.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img_2.png" class="d-block w-100" alt="Screenshot 2">
+                <div class="carousel-caption d-none d-md-block">
+                <h5>Friends</h5>
+                <p class="text-light text-opacity-75">Meet NPC's to help ypu on your journey.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img_3.png" class="d-block w-100" alt="Screenshot 3">
+                <div class="carousel-caption d-none d-md-block">
+                <h5>Enemies</h5>
+                <p class="text-light text-opacity-75">Bosses will test the player in fun and meaningful ways.</p>
+                </div>
+            </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#screensCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#screensCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        </section>
+
+        <!--Features-->
+
+        <section class="container pb-5" id="features">
+        <h2 class="h3 mb-3">Features</h2>
+
+        <div class="row g-3">
+            <div class="col-12 col-md-6 col-lg-4">
+            <div class="card bg-black border-light border-opacity-10 h-100 shadow-soft">
+                <div class="card-body">
+                <h3 class="h5">Gesture Magic</h3>
+                <p class="text-secondary mb-0">Cast spells with quick gestures and resource tradeoffs.</p>
+                </div>
+            </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+            <div class="card bg-black border-light border-opacity-10 h-100 shadow-soft">
+                <div class="card-body">
+                <h3 class="h5">Quest-Driven Exploration</h3>
+                <p class="text-secondary mb-0">Discover NPC stories and unlock new routes.</p>
+                </div>
+            </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+            <div class="card bg-black border-light border-opacity-10 h-100 shadow-soft">
+                <div class="card-body">
+                <h3 class="h5">Original OST</h3>
+                <p class="text-secondary mb-0">Orchestral themes and boss tracks built for big moments.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="mt-4">
+            <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse" data-bs-target="#devNote" aria-expanded="false" aria-controls="devNote">
+            Read a short dev note
+            </button>
+            <div class="collapse mt-3" id="devNote">
+            <div class="card card-body bg-black border-light border-opacity-10 text-secondary">
+                placeholder dev note
+            </div>
+            </div>
+        </div>
+        </section>
+
+        <!--Accordion-->
+        
+        <section class="container pb-5" id="faq">
+        <h2 class="h3 mb-3">FAQ</h2>
+
+        <div class="accordion accordion-flush border border-light border-opacity-10 rounded-4 overflow-hidden bg-black" id="faqAccordion">
+            <div class="accordion-item bg-black">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-black text-light" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne" aria-expanded="false" aria-controls="faqOne">
+                    When is the release?
+                    </button>
+                </h2>
+                <div id="faqOne" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body text-secondary">
+                        Expected Summer of 2027
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item bg-black">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-black text-light" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo">
+                    What platforms?
+                    </button>
+                </h2>
+            <div id="faqTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-secondary">
+                    PC (Windows)
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item bg-black">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed bg-black text-light" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree" aria-expanded="false" aria-controls="faqThree">
+            Is there a demo?
+            </button>
+        </h2>
+        <div id="faqThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body text-secondary">
+            Yes, Runic Winds has a playable demo containing the opening chapter of the game. 
+            </div>
+        </div>
+        </div>
+        </div>
+        </section>
+
+        <!--Press kit, Contact -->
+
+        <section class="container pb-5" id="presskit">
+            <div class="row g-3">
+                <div class="col-12 col-lg-6">
+                    <div class="card bg-black border-light border-opacity-10 shadow-soft h-100">
+                        <div class="card-body">
+                        <h2 class="h4">Press Kit</h2>
+                        <p class="text-secondary">
+                            placeholder press kit
+                        </p>
+                        <a class="btn btn-outline-light" href="#" aria-disabled="true">Download</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6" id="contact">
+                    <div class="card bg-black border-light border-opacity-10 shadow-soft h-100">
+                        <div class="card-body">
+                            <h2 class="h4">Contact</h2>
+                            <p class="text-secondary">Email: geccobotdev@gmail.com</p>
+                            <p class="text-secondary mb-0">TikTok: @geccobotdev</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+  <!--Footer-->
+
+  <footer class="border-top border-light border-opacity-10 py-4">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
+        <div class="d-flex gap-2">
+            <a class="text-secondary small link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#trailer">Trailer</a>
+            <a class="text-secondary small link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#screens">Screenshots</a>
+            <a class="text-secondary small link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#contact">Contact</a>
+            </div>
+    </div>
+  </footer>
+
+  <!--Modal-Wishlist-->
+
+  <div class="modal fade" id="wishlistModal" tabindex="-1" aria-labelledby="wishlistModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-black text-light border border-light border-opacity-10">
+            <div class="modal-header">
+                <h5 class="modal-title" id="wishlistModalLabel">Wishlist Runic Winds!</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+        <div class="modal-body text-secondary">
+            https://store.steampowered.com/app/4371640/Runic_Winds_Demo/
+        </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Not now</button>
+                <button type="button" class="btn btn-primary" id="wishlistConfirmBtn" data-bs-dismiss="modal">
+                    Confirm
+                </button>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Modal-Newsletter -->
+   
+  <div class="modal fade" id="newsletterModal" tabindex="-1" aria-labelledby="newsletterModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-black text-light border border-light border-opacity-10">
+        <div class="modal-header">
+            <h5 class="modal-title" id="newsletterModalLabel">Newsletter</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <label for="emailInput" class="form-label text-secondary">Email address</label>
+            <input id="emailInput" type="email" class="form-control bg-dark text-light border-light border-opacity-10" placeholder="you@example.com">
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Sign up</button>
+        </div>
+        </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
+</html>
