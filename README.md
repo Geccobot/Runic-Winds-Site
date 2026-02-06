@@ -2,10 +2,10 @@
 # Custom Website with Frameworks (Bootstrap)
 
 ## Live Site
-- GitHub Pages: (paste your link here)
+- GitHub Pages: https://geccobot.github.io/Runic-Winds-Site/
 
 ## Repository
-- Repo Link: (paste your repo link here)
+- Repo Link: https://github.com/Geccobot/Runic-Winds-Site
 
 ## Custom CSS that couldn't be replaced with Bootstrap utilities
 - `:root --brand` and `.brand-accent`: custom brand color for the navbar/logo text.
